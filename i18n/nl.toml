@@ -1,0 +1,55 @@
+
+
+# UI strings. Buttons and similar.
+
+[ui_pager_prev]
+other = "Vorige"
+
+[ui_pager_next]
+other = "Volgende"
+
+[ui_read_more]
+other = "Meer"
+
+[ui_search]
+other = "Doorzoek deze site…"
+
+# Used in sentences such as "Posted in News"
+[ui_in]
+other = "in"
+
+# Footer text
+[footer_all_rights_reserved]
+other = "Alle rechten voorbehouden"
+
+[footer_privacy_policy]
+other = "Privacy Policy"
+
+
+# Post (blog, articles etc.)
+[post_byline_by]
+other = "Door"
+[post_created]
+other = "Mogelijk gemaakt"
+[post_last_mod]
+other = "Last modified"
+[post_edit_this]
+other = "Bewerken"
+[post_create_child_page]
+other = "Nieuwe subpagina"
+[post_create_issue]
+other = "Meld een probleem"
+[post_create_project_issue]
+other = "Rapporteer algemeen probleem"
+[post_posts_in]
+other = "Posts in"
+
+# Print support
+[print_printable_section]
+other = "Dit is de muli-pagina print preview."
+[print_click_to_print]
+other = "Klik hier om af te drukken"
+[print_show_regular]
+other = "Terug naar de gewone weergave"
+[print_entire_section]
+other = "Druk hele sectie af"
