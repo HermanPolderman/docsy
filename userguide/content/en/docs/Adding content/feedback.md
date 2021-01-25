@@ -21,7 +21,7 @@ The Docsy theme contains built-in support for [Google Analytics](https://analyti
         id = "UA-00000000-0"
 
 1. Save and close `config.toml`.
-1. Ensure that your site is built with `HUGO_ENV="production"`, as Docsy only adds Analytics tracking to production-ready sites. You can specify this variable as a command line flag to Hugo: 
+1. Ensure that your site is built with `HUGO_ENV="production"`, as Docsy only adds Analytics tracking to production-ready sites. You can specify this variable as a command line flag to Hugo:
 
     ```
     $ env HUGO_ENV="production" hugo
@@ -36,7 +36,7 @@ By default Docsy puts a "was this page helpful?" feedback widget at the bottom o
 documentation page, as shown in Figure 1.
 
 <figure>
-  <img src="/images/feedback.png"
+  <img src="images/feedback.png"
        alt="The user is presented with the text 'Was this page helpful?' followed
             by 'Yes' and 'No' buttons."/>
   <figcaption>Figure 1. The feedback widget, outlined in red</figcaption>
@@ -46,7 +46,7 @@ After clicking **Yes** the user should see a response like Figure 2. You can con
 response text in `config.toml`.
 
 <figure>
-  <img src="/images/yes.png"
+  <img src="images/yes.png"
        alt="After clicking 'Yes' the widget responds with 'Glad to hear it!
             Please tell us how we can improve.' and the second sentence is a link which,
             when clicked, opens GitHub and lets the user create an issue on the
@@ -107,15 +107,15 @@ Here's what the 4 columns represent:
   session. For example, suppose your **Total Events** is 5000, and **Unique Events** is 2500.
   This means that you have 2500 users who are rating 2 pages per session.
 * **Event Value** isn't that useful.
-* **Avg. Value** is the aggregated rating for that page. The value is always between 0 
-  and 1. When users click **No** a value of 0 is sent to Google Analytics. When users click 
+* **Avg. Value** is the aggregated rating for that page. The value is always between 0
+  and 1. When users click **No** a value of 0 is sent to Google Analytics. When users click
   **Yes** a value of 1 is sent. You can think of it as a percentage. If a page has an
   **Avg. Value** of 0.67, it means that 67% of users clicked **Yes** and 33% clicked **No**.
 
 [events]: https://developers.google.com/analytics/devguides/collection/analyticsjs/events
 [PR]: https://github.com/google/docsy/pull/1/files
 
-The underlying Google Analytics infrastructure that stores the "was this page helpful?" data is 
+The underlying Google Analytics infrastructure that stores the "was this page helpful?" data is
 called [Events][events]. See [docsy pull request #1][PR] to see exactly
 what happens when a user clicks **Yes** or **No**. It's just a `click` event listener that
 fires the Google Analytics JavaScript function for logging an Event, disables the **Yes** and
